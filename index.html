@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+	</head>
+		
+	<body>
+		<div class="container">
+			<header>
+				<h1 id="title">Swimming Pool Satisfaction Survey</h1>
+				<p id="description">Thank you for taking the time to help us<p>		
+			</header>
+
+			<form id="survey-form"> 
+				<div class="form-group">
+						<label id="name-label"> Name </label>
+				  <input class="form-control" placeholder="Enter your name" id="name" 
+						 name="Name" type="text" required />
+				</div>
+				<div class="form-group">
+					<label id="email-label"> Email</label>
+				  	<input class="form-control" placeholder="Enter your email" Enter your emailid="email" id="email" type="email" required/>
+				</div>
+				<div class="form-group">
+					<label id="number-label"> Age </label> <label class="adds">(Optional) </label> 
+				  	<input  class="form-control" placeholder="Age" id="number" type="number" min="15" max="100"/>      
+				</div>    
+				<div class="form-group">
+					<label> Name of facility visited:</label>
+					<select id="dropdown" class="form-control" name="facility">
+						<option disabled="" value="">Select current role</option>
+						<option value="newcastle">Newcastle pool</option>
+						<option value="Liverpool">Liverpool pool</option>
+						<option value="elondon">East London pool</option>
+						<option value="nlondon">North London pool</option>
+						<option value="other">Other</option>
+					</select> 
+				</div>    
+				<div class="form-group">
+					<label> How would you rate the service you received by the pool staff?</label>
+					<label class="radio"> <input type="radio" name="rate-service" value="Poor" />Poor</label>
+					<label class="radio"> <input type="radio" name="rate-service" value="Need improvements"/>Need improvements</label>
+					<label class="radio"> <input type="radio" name="rate-serviced" value="Average"/>Average</label>
+					<label class="radio"> <input type="radio" name="rate-service" value="Good"/>Good</label>
+					<label class="radio"> <input type="radio" name="rate-service" value="Excellent"/>Excellent</label>
+				</div>   
+				<div class="form-group">
+					<label> What is your favorite facility or service?</label>
+					<select id="dropdown" class="form-control" name="favorite">
+						<option disabled="" value="">Select an option</option>
+						<option value="pool_staff">Pool staff</option>
+						<option value="pool">Pool</option>
+						<option value="sunscreen">Free sunscreen dispensers</option>
+						<option value="aquatic_programs">Aquatic programs</option>
+					</select> 
+				</div> 
+				<div class="form-group">
+					<label> How did you hear about our pools?</label> <label class="adds">(Check all that apply)</label>
+					<label class="checkbox"> <input type="checkbox" name="hear-about" value="1"/> Gainesville Sun Newspaper </label>
+					<label class="checkbox"> <input type="checkbox" name="hear-about" value="2"/> Guardian Newspaper  </label>
+					<label class="checkbox"> <input type="checkbox" name="hear-about" value="3"/> North Florida School Days </label>
+					<label class="checkbox"> <input type="checkbox" name="hear-about" value="4"/> Giggle Magazine </label>
+					<label class="checkbox"> <input type="checkbox" name="hear-about" value="5"/> Senior Times Magazine  </label>
+					<label class="checkbox"> <input type="checkbox" name="hear-about" value="6"/> Community 12 TV  </label>
+				</div>     
+				<div class="form-group">
+				  	<label> Any comments or suggestions?</label>
+				  	<textarea class="form-control" name="comments" rows="3" cols="30" placeholder= "Enter your comment here ..."></textarea>
+				</div> 
+				<div class="form-group">
+				  	<input type="submit" id="submit" value="Submit"/>
+				</div> 
+ 			</form>
+		</div>
+	</body>
+</html>
